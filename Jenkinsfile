@@ -1,10 +1,8 @@
 pipeline {
   agent {
-    node {
       label 'Node2'
     }
-
-  }
+    tools 'maven38'
   stages {
     stage('Build') {
       steps {
